@@ -130,12 +130,12 @@ int main(){
 		cout<<"\n6 Show All Accounts";
 		cout<<"\n7 Quit";
 		cout<<"\nEnter your choice: ";
-	    cin>>choice;
-	    while(choice<1 || choice>7){
-        	system("cls");
-        	cout<<"Invalid Choice Input\n"<<endl;
-        	cout<<"*************************** Banking System ***************************";
-        	cout<<"\n\n1 Open an Account";
+	    	cin>>choice;
+	    	while(choice<1 || choice>7){
+			system("cls");
+			cout<<"Invalid Choice Input\n"<<endl;
+			cout<<"*************************** Banking System ***************************";
+        		cout<<"\n\n1 Open an Account";
 			cout<<"\n2 Balance Enquiry";
 			cout<<"\n3 Deposit";
 			cout<<"\n4 Withdrawal";
@@ -143,7 +143,7 @@ int main(){
 			cout<<"\n6 Show All Accounts";
 			cout<<"\n7 Quit";
 			cout<<"\nEnter your choice: ";
-		    cin>>choice;
+		    	cin>>choice;
 		}
 		switch(choice)
 			{
@@ -160,8 +160,8 @@ int main(){
 				cout<<"Congratulations!! Account has been Created"<<endl;
 				getAccountDetails(acc);
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
+				c = getchar();
+				c = getchar();
 				break;
 		 	case 2:
 		 		cout<<"-------Balance Enquiry-------"<<endl;
@@ -169,8 +169,8 @@ int main(){
 				cin>>accountNumber;
 				b.BalanceEnquiry(accountNumber);
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
+				c = getchar();
+				c = getchar();
 				break;
 			case 3:
 				cout<<"-------Deposit an account-------"<<endl;
@@ -181,8 +181,8 @@ int main(){
 				b.Deposit(accountNumber, amount);
 				cout<<endl<<"Amount is Deposited"<<endl;
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
+				c = getchar();
+				c = getchar();
 				break;
 			case 4:
 				cout<<"-------Withdraw an account-------"<<endl;
@@ -192,8 +192,8 @@ int main(){
 				cin>>amount;
 				b.Withdraw(accountNumber, amount);
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
+				c = getchar();
+				c = getchar();
 				break;
 			case 5:
 				cout<<"-------Close an account-------"<<endl;
@@ -203,15 +203,15 @@ int main(){
 				cout<<endl<<"Account is Closed"<<endl;
 				getAccountDetails(acc);
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
-            	break;
+				c = getchar();
+				c = getchar();
+				break;
 			case 6:
 				cout<<"-------Show all account details-------"<<endl;
 				b.ShowAllAccounts();
 				cout<<"\n\nEnter any key to go back to main menu..";
-            	c = getchar();
-            	c = getchar();
+				c = getchar();
+				c = getchar();
 				break;
 			case 7: 
 				break;
