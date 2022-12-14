@@ -1,4 +1,4 @@
-//#Banking System by Ravi Kumawat
+//#Banking System by Ravi Kumar
 #include<iostream>
 #include<map>
 using namespace std;
